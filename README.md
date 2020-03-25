@@ -1,4 +1,5 @@
 # arc1_order_calculator
+アークザラッド1の行動順を算出する計算機です。
 
 ## Project setup
 ```
