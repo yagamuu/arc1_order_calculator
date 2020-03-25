@@ -122,7 +122,7 @@ export const mapUnitListData: MapUnitList = [
       {
         id: 0,
         unit: {
-          id: 0, lv: 2, paro: 0, acs: 0, speedUp: false, action: 94,
+          id: 0, lv: 6, paro: 1, acs: 0, speedUp: false, action: 89,
         },
       },
       {
@@ -157,7 +157,7 @@ export const mapUnitListData: MapUnitList = [
       {
         id: 0,
         unit: {
-          id: 0, lv: 9, paro: 1, acs: 1, speedUp: false, action: 85,
+          id: 0, lv: 9, paro: 1, acs: 0, speedUp: false, action: 86,
         },
       },
       {

@@ -17,7 +17,7 @@ import TheSetting from './TheSetting.vue';
 import TheOutput from './TheOutput.vue';
 
 export default Vue.extend({
-  name: 'Contents',
+  name: 'TheContents',
 
   components: {
     TheSetting,

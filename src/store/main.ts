@@ -5,23 +5,20 @@ import store from '@/store';
 import clone from 'clone';
 import { resultModule } from '@/store/result';
 import { gameDataModule } from '@/store/gameData';
-import { UnitParam } from '@/assets/game_data/mapUnitList';
+import { UnitParam, Unit, UnitList } from '@/assets/game_data/mapUnitList';
 
 const initUnit: UnitParam = {
   id: 0, lv: 1, paro: 0, acs: 0, speedUp: false, action: 95,
 };
 
-export type Unit = { id: number; unit: UnitParam };
-export type UnitListType = Array<Unit>;
-
 // state's interface
 export interface MainState {
-  unitList: UnitListType;
+  unitList: UnitList;
   count: number;
   lastActionId: number;
 }
 
-const makeInitUnitList = (): UnitListType => [{ id: 0, unit: clone(initUnit) }];
+const makeInitUnitList = (): UnitList => [{ id: 0, unit: clone(initUnit) }];
 
 @Module({
   dynamic: true, store, name: 'main', namespaced: true,
@@ -30,7 +27,7 @@ class Main extends VuexModule implements MainState {
   // state
   count = 0;
 
-  unitList: UnitListType = makeInitUnitList();
+  unitList: UnitList = makeInitUnitList();
 
   lastActionId = 0;
 
@@ -40,7 +37,7 @@ class Main extends VuexModule implements MainState {
   }
 
   @Mutation
-  private setUnitList(data: UnitListType) {
+  private setUnitList(data: UnitList) {
     this.unitList = data;
   }
 
