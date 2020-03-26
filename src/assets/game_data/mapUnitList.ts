@@ -7,18 +7,18 @@ export interface UnitParam {
     action: number;
 }
 
-export type Unit = { id: number; unit: UnitParam };
+export type unit = { id: number; unit: UnitParam };
 
-export type UnitList = Array<Unit>;
+export type unitList = Array<unit>;
 
 export interface MapUnit {
   id: number;
-  unitList: UnitList;
+  unitList: unitList;
 }
 
-export type MapUnitList = Array<MapUnit>;
+export type mapUnitList = Array<MapUnit>;
 
-export const mapUnitListData: MapUnitList = [
+export const mapUnitListData: mapUnitList = [
   {
     id: 0,
     unitList: [{

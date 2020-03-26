@@ -22,33 +22,33 @@ class Result extends VuexModule implements ResultState {
   count = 0;
 
   @Mutation
-  private addResultList(result: ResultType) {
+  private ADD_RESULT_LIST(result: ResultType) {
     this.resultList.push(result);
   }
 
   @Mutation
-  private incrementCount() {
+  private INCREMENT_COUNT() {
     this.count += 1;
   }
 
   @Mutation
-  private initResultList() {
+  private INIT_RESULT_LIST() {
     this.resultList = [];
   }
 
   @Action
   public addResultAction(message: string) {
-    this.incrementCount();
+    this.INCREMENT_COUNT();
     const data = {
       id: this.count,
       message,
     };
-    this.addResultList(data);
+    this.ADD_RESULT_LIST(data);
   }
 
   @Action
   public initResultListAction() {
-    this.initResultList();
+    this.INIT_RESULT_LIST();
   }
 }
 
