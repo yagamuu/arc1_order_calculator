@@ -24,7 +24,7 @@
     "@vue/cli-plugin-eslint": "^4.2.3",
     "@vue/cli-plugin-typescript": "^4.2.3",
     "@vue/cli-plugin-vuex": "^4.2.3",
-    "@vue/cli-service": "^4.2.3",
+    "@vue/cli-service": "^5.0.8",
     "@vue/eslint-config-airbnb": "^5.0.2",
     "@vue/eslint-config-typescript": "^5.0.2",
     "clone": "^2.1.2",
